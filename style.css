@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+i{
+    padding: 0 0.5rem;
+    color: black;
+}
+
+header, footer {
+    background-color: #0284c7;
+}
+
+/*header*/
+header, header .contact-links {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+header div.card{
+    padding: 2rem;
+    background-color: #FFFFFF;
+    max-width: 30vw;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+header i{
+    font-size: 1.25rem;
+}
+
+header .contact-links{
+    justify-content: end;
+    padding-top: 2rem;
+}
+
+.image-container{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.image-text{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    bottom: 1rem;
+    left: 1.75rem;
+}
+
+/*main*/
+main{
+    margin: 2rem;
+}
+
+main img, .phone img, .email img{
+    height:20px;
+    width:20px;
+    padding-right: 0.5rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proj-card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+}
+
+.proj-card:nth-child(odd) .screenshot{
+    background-color: #7e22ce;
+}
+
+.proj-card:nth-child(even) .screenshot{
+    background-color: #f43f5e;
+}
+
+.proj-details{
+    padding: 0.5rem 1rem 2rem 1rem;
+}
+
+.screenshot p{
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4rem 1rem 1rem 1rem;
+}
+
+.top-row, .proj-links {
+   display: flex;
+   align-items: center;
+}
+
+.top-row {
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+/*footer*/
+
+footer, footer .contact-links, .phone, .email {
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding: 1rem 2rem; 
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    max-width: 50vw;
+}
+
+.contact-info > * {
+    padding: 0.75rem 0;
+}
+
+.footer-image {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .image-container {
+        transform: scale(0.5);
+    }
+}
+ 
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header div.card {
+        transform: translate(-1.5rem, 2rem);
+    }
+    
+    .image-container {
+        transform: scale(0.9);
+        z-index: 2;
+    }
+    
+}
+
